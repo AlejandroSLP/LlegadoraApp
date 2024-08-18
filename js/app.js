@@ -77,3 +77,39 @@ function updateTrackInfo() {
   // Por ejemplo, usando una función de la API para obtener información de la emisora
   console.log("Información del track actual actualizada");
 }
+
+// promptInstallButton
+window.addEventListener("beforeinstallprompt", e => {
+  console.log(`> beforeinstallprompt fired with platforms: ${e.platforms.join(',')}\r\n`);
+  
+  // pre.append(`> beforeinstallprompt fired with platforms: ${e.platforms.join(',')}\r\n`);
+  const showDefaultPrompt = new URLSearchParams(location.search).has(
+    "showDefaultPrompt"
+  );
+  if (showDefaultPrompt) {
+
+    console.log("Default PWA mini info-bar on mobile should show up. Clear site settings if not.\r\n");
+    
+    // pre.append(
+    //   "Default PWA mini info-bar on mobile should show up. Clear site settings if not.\r\n"
+    // );
+    return;
+  }
+  promptButton.hidden = false;
+  e.preventDefault();
+  e.userChoice.then(result =>
+    console.log(`userChoice resolved with: ${JSON.stringify(result)}\r\n`)
+    
+    // pre.append(`userChoice resolved with: ${JSON.stringify(result)}\r\n`)
+  );
+  promptButton.onclick = () => {
+    console.log("Waiting for user choice...\r\n");
+    
+    // pre.append(
+    //   "Waiting for user choice...\r\n"
+    // );
+    e.prompt();
+  };
+});
+
+// Fin promptInstallButton

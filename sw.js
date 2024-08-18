@@ -2,9 +2,9 @@
 importScripts('js/sw-utils.js');
 
 
-const STATIC_CACHE    = 'static-v4';
-const DYNAMIC_CACHE   = 'dynamic-v3';
-const INMUTABLE_CACHE = 'inmutable-v1';
+const STATIC_CACHE    = 'static-v8';
+const DYNAMIC_CACHE   = 'dynamic-v7';
+const INMUTABLE_CACHE = 'inmutable-v3';
 
 const APP_SHELL = [
     // '/',
@@ -22,7 +22,7 @@ const APP_SHELL_INMUTABLE = [
     'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css',
     'https://fonts.googleapis.com/css?family=Quicksand:300,400',
     'https://fonts.googleapis.com/css?family=Lato:400,300',
-    'https://use.fontawesome.com/releases/v5.3.1/css/all.css',
+    'https://kit.fontawesome.com/627c8030a4.js',
     './js/libs/jquery.min.js',
     'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js',
     'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js',

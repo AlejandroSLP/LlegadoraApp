@@ -1,6 +1,6 @@
 {
     "name": "La Llegadora Radio",
-    "description": "La Mejor Programación 24/7",
+    "description": "La Mejor Programación 24/7 de Matehuala para el Mundo!",
     "short_name": "La Llegadora Radio",
     "start_url": "index.html",
     "lang": "es-la",
@@ -11,6 +11,30 @@
     "orientation": "portrait-primary",
     "theme_color": "#FE6C17",
     "background_color": "#FE6C17",
+    "id": "/index.html",
+    "screenshots": [
+        {
+          "src": "img/imgInstall/screenshot-demo1.png",
+          "sizes": "640x320",
+          "type": "image/png",
+          "form_factor": "wide",
+          "label": "La Llegadora Radio"
+        },
+        {
+          "src": "img/imgInstall/screenshot-Android1.png",
+          "sizes": "540x720",
+          "type": "image/png",
+          "form_factor": "narrow",
+          "label": "La Llegadora Radio App"
+        },
+        {
+          "src": "img/imgInstall/screenshot-Android2.png",
+          "sizes": "540x720",
+          "type": "image/png",
+          "form_factor": "narrow",
+          "label": "La Llegadora Radio App"
+        }
+      ],
     "icons": [
     {
       "src": "img/windows11/SmallTile.scale-100.png",
