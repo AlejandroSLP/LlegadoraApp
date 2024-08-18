@@ -1,7 +1,7 @@
 {
     "name": "La Llegadora Radio",
     "description": "La Mejor Programación 24/7",
-    "short_name": "La Llegadora",
+    "short_name": "La Llegadora Radio",
     "start_url": "index.html",
     "lang": "es-la",
     "launch_handler": {
